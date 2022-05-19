@@ -1,3 +1,1 @@
-{
-	"roommates": []
-}
+{"roommates":[{"id":"a8e4b5","nombre":"Felix Rodriguez","debe":0,"recibe":0,"correo":"felix.rodriguez@example.com"},{"id":"7cc4b8","nombre":"ملینا موسوی","debe":0,"recibe":0,"correo":"mlyn.mwswy@example.com"},{"id":"074d6d","nombre":"Vernon Fields","debe":0,"recibe":0,"correo":"vernon.fields@example.com"},{"id":"321e83","nombre":"Filipe Chevalier","debe":0,"recibe":0,"correo":"filipe.chevalier@example.com"},{"id":"23ff4b","nombre":"Norma Reid","debe":0,"recibe":0,"correo":"norma.reid@example.com"}]}

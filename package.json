@@ -1,7 +1,6 @@
 {
   "name": "prueba-roommates",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,15 @@
   "dependencies": {
     "axios": "^0.27.2",
     "uuid": "^8.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianaOL/prueba_roommates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AdrianaOL/prueba_roommates/issues"
+  },
+  "homepage": "https://github.com/AdrianaOL/prueba_roommates#readme",
+  "description": ""
 }

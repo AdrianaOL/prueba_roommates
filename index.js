@@ -19,7 +19,12 @@ http
 		}
 		if (req.url.startsWith('/roommate') && req.method == 'GET') {
 			res.writeHead(200, { 'Content-Type': 'application/json' })
-			res.end(fs.readFileSync('roommates.json', 'utf8'))
+			fs.readFile('roommates.json', 'utf8', (error, data) => {
+			if (data)res.end(JSON.stringify(data))
+			else console.log(error)
+			})
+			//fs.readFileSync('roommates.json', 'utf8')
+			//res.end(JSON.stringify('romates.json'))
 		}
 		if (req.url.startsWith('/roommate') && req.method == 'POST') {
 			const roomMatesJson = JSON.parse(fs.readFileSync('roommates.json', 'utf8'))

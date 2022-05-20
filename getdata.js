@@ -18,6 +18,25 @@ const getData = async () => {
 		console.log(error)
 	}
 }
+const deuda = async(gastos, roomMate)=> {
+	roomMate = roomMate.map((r) => {
+		r.debe = 0
+		r.recibe = 0
+		r.total = 0
+		return r
+	})
+	gastos.forEach((g) => {
+		roomMate = roomMate.map((r) => {
+			const dividendo = Number((g.monto / roomMate.length).toFixed(2))
+			if (g.roommate == r.nombre) {
+				r.recibe += dividendo
+			} else {
+				r.debe -= dividendo
+			}
+			r.total = r.recibe - r.debe
+			return r
+		})
+	})
+}
+module.exports = {getData, deuda}
 
-
-module.exports = getData
